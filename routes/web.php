@@ -31,13 +31,13 @@ Route::get('/materia/edit{id}', 'MateriaController@edit');
 Route::post('/materia/update{id}', 'MateriaController@update');*/
 
 Route::resource('materia', 'MateriaController');
-
+Route::resource('alumno', 'AlumnoController');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/materia', 'MateriaController@index');
+//Route::get('/materia', 'MateriaController@index');//
 Route::get('/empleados', 'EmpleadoController@index');
 Route::get('/alumnos', 'AlumnoController@index');
 Route::get('/dependencias', 'DependenciaController@index');

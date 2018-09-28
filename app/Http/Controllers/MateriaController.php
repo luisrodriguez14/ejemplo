@@ -36,7 +36,17 @@ class MateriaController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+      Materia::create($request->all());
+        /*dd($request->all());
+      $materia = new Materia();
+      $materia->nombre_materia=$request->input('nombre_materia');
+      $materia->crn=$request->input('crn');
+      $materia->seccion=$request->input('seccion');
+      $materia->horario=$request->input('horario');
+      $materia->save();*/
+      
+      return redirect()->route('materia.index');
+      
     }
 
     /**

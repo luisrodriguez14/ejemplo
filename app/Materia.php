@@ -10,4 +10,5 @@ class Materia extends Model
    {
      return $this->belongsTo('App\User');
    }
+  protected $fillable = ['nombre_materia','crn','seccion','horario'];
 }

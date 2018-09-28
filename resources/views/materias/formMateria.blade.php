@@ -8,8 +8,8 @@
      <label for="materia">Materia:</label>
      <input type="text" name="nombre_materia">
      <br>   
-     <label for="nrc">NRC:</label>
-     <input type="text" name="nrc">
+     <label for="crn">NRC:</label>
+     <input type="text" name="crn">
      <br>
      <label for="seccion">Sección:</label>
      <input type="text" name="seccion">
